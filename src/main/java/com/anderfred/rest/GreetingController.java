@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class GreetingController {
     Logger logger = LoggerFactory.getLogger(GreetingController.class);
 
-    @RequestMapping("/greeting")
+    @RequestMapping("/")
     public Greeting greeting() {
-        logger.info("/greeting");
+        logger.info("/");
 
         return new Greeting(32 , "fredx");
     }
